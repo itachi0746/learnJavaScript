@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    function changeImage()
+    {
+        element=document.getElementById('myimage')
+        if (element.src.match("bandeng"))
+        {
+            element.src="/re.jpg";
+        }
+        else
+        {
+            element.src="/bandeng.jpg";
+        }
+    }
+</script>
+
+<img id="myimage" onclick="changeImage()"
+     src="/re.jpg">
+
+<p>点击灯泡来点亮或者熄灭这盏灯</p>
+</body>
+</html>

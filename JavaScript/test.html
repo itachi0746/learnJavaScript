@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<body>
+<ul id="test-list">
+    <li>JavaScript</li>
+    <li>Swift</li>
+    <li>HTML</li>
+    <li>ANSI C</li>
+    <li>CSS</li>
+    <li>DirectX</li>
+</ul>
+
+<script>
+'use strict';
+var parent = document.getElementById('test-list');
+for (var chd of parent.children) {
+   alert(chd.innerText);
+}
+</script>
+</body>

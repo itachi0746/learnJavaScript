@@ -1,0 +1,2 @@
+一些JavaScript的基础练习.
+基于W3school上JavaScript教程的例子的模仿练习.

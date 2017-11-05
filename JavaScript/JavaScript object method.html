@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+    function person(firstname,lastname,age,eyecolor)
+    {
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.age = age;
+        this.eyecolor = eyecolor;
+
+        this.changeName=changeName;
+        function changeName(name)    //添加方法
+        {
+            this.lastname=name;
+        }
+    }
+    myMother=new person("Steve","jobs",56,"green");
+    myMother.changeName("Ballmer");
+    document.write(myMother.lastname);
+</script>
+</body>
+</html>

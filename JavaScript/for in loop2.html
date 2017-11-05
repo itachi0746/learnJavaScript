@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>点击下面的按钮, 循环遍历对象person的属性。</p>
+<button onclick="myFunc()">click here</button>
+<p id="demo"></p>
+
+<script>
+    function myFunc()
+    {
+        var x;
+        var txt="";
+        var person={fname:"Bill",lname:"Gates",age:56};
+
+        for (x in person)
+        {
+            txt=txt + person[x];
+        }
+        document.getElementById("demo").innerHTML=txt;
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>如果时间早于 20.00, 会获得问候 "Good Day".</p>
+
+<button onclick="myFunction()">click</button>
+
+<p id="demo"></p>
+
+<script>
+    function myFunction()
+    {
+        var x="";
+        var time=new Date().getHours();
+        if (time<10)
+            {
+                x="Good morning";
+            }
+        else if (time<20)
+            {
+                x="Good day"
+            }
+        else
+            {
+                x="good evening"
+            }
+        document.getElementById("demo").innerHTML=x;
+
+    }
+</script>
+
+</body>
+</html>
